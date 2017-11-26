@@ -30,8 +30,11 @@ LOCAL_SRC_FILES := \
     valueOf.cpp \
 
 LOCAL_STATIC_LIBRARIES += \
+    libbase \
     libfdlibm \
 
 LOCAL_SHARED_LIBRARIES += \
     liblog \
     libnativehelper \
+
+LOCAL_CFLAGS += -fno-strict-aliasing
